@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="guesStyle.css" />
+  </head>
+  <body>
+    <a class="navBtn" href="../index.html">
+      <button>go back</button>
+    </a>
+    <hr style="margin: 20px 0" />
+
+    <div class="mainContent">
+      <h2>Guess The Number</h2>
+      <p>
+        You are given 10 attempts to try and guess the number if you guess it
+        right you will win and if not you will loose
+      </p>
+
+      <!-- input Form -->
+      <div class="inputForm">
+        <form action="submit">
+          <div class="form">
+            <label for="numberInput">Enter the Number</label>
+            <input
+              type="text"
+              name="numberInput"
+              class="inputNumber"
+              placeholder="Add Number"
+            />
+
+            <button class="submitBtn" type="submit">submit</button>
+          </div>
+        </form>
+      </div>
+
+      <div>
+        <h3 class="numberInfo">you number position</h3>
+      </div>
+
+      <hr style="margin-bottom: 20px;">
+      <div>
+        <h3 class="previousGuess">your guesses : <span></span></h3>
+        <h3 class="attemptsLeft">number of attempts: <span>0</span></h3>
+      </div>
+    </div>
+    <script src="./guessScript.js"></script>
+  </body>
+</html>
