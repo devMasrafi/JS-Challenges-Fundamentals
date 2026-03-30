@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./todoStyle.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <a class="navBtn" href="../index.html">
+      <button>go back</button>
+    </a>
+    <!-- <h2 style="text-align: center; margin-top: 5rem; color: #fff;">Todo List</h2> -->
+    <div class="mainContent">
+        <!-- form -->
+      <div>
+        <form action="submit" class="form">
+          <label for="inputBox"> Create To-Do</label>
+          <input
+            id="inputBox"
+            type="text"
+            name="inputBox"
+            placeholder="Type here..."
+          />
+
+          <div>
+            <button class="submitBtn" id="submitBtn" type="submit">
+              submit
+            </button>
+          </div>
+        </form>
+
+        <div>
+            <h3 class="userNotif"></h3>
+        </div>
+      </div>
+
+      <!-- show list -->
+      <div class="list-Items">
+        <h2
+          style="
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            margin-bottom: 10px;
+          "
+        >
+          List
+        </h2>
+        <p id="updateInstruct" style="color: #fff; text-transform: capitalize; font-family: Arial, Helvetica, sans-serif;">add to-do to update this</p>
+        <ol class="orderList">
+        </ol>
+      </div>
+    </div>
+
+    <script src="./todoScript.js"></script>
+  </body>
+</html>
