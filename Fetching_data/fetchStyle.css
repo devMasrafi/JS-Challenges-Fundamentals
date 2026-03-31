@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 900px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* theme switch */
+
+body {
+  background-color: #3e5e66;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+/* Default Light Mode */
+.themeBtn {
+  background-color: white;
+  color: black;
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-theme .themeBtn {
+  background-color: #3e5e66;
+  color: white;
+  border: 1px solid white;
+}
+
+/*  */
+body a {
+  display: flex;
+  justify-content: center;
+
+  margin: 2rem 0;
+  text-decoration: none;
+}
+
+body a button {
+  padding: 10px 20px;
+  border: 1px solid gray;
+  border-radius: 6px;
+
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+body.dark-theme a button {
+  background-color: #3e5e66;
+  color: white;
+  border: 1px solid white;
+}
+
+/* bg styles done.. */
+
+.contentBtn {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 20px;
+  border-bottom: 2px solid #b8b8b8;
+}
+
+.contentBtn button {
+  padding: 10px 20px;
+  border: 1px solid gray;
+  border-radius: 6px;
+
+  font-size: 18px;
+}
+body.dark-theme .contentBtn button {
+  background-color: #3e5e66;
+  color: white;
+  border: 1px solid white;
+}
+
+.mainContent h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.userList {
+  list-style: none;
+  padding: 0;
+}
+
+.userList .header {
+  display: flex;
+  justify-content: space-between;
+}
+.userList li {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+  border-bottom: 1px solid gray;
+  padding: 10px 0;
+  color: #fff;
+}
+
+/* Name */
+.userList li span:nth-child(1) {
+  flex: 2;
+}
+
+/* Username */
+.userList li span:nth-child(2) {
+  flex: 1;
+}
+
+/* Website */
+.userList li span:nth-child(3) {
+  flex: 1;
+}
+
+/* Email */
+.userList li span:nth-child(4) {
+  flex: 2;
+}
+
+/* Button */
+.userList li button {
+  flex: 0 0 80px;
+  padding: 5px 10px;
+}
+
+body.dark-theme .userList li button {
+  background-color: #3e5e66;
+  color: white;
+  border: 1px solid white;
+}
